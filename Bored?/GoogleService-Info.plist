@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>528471404332-bdsla3ctf6ieij6a63o8o88136elggiu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.528471404332-bdsla3ctf6ieij6a63o8o88136elggiu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAKzZyQjXRsPBnTFZdoZuU3iCAwGR5RM0k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>528471404332</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.HelenCao.Bored-</string>
+	<key>PROJECT_ID</key>
+	<string>bored-1499816359490</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bored-1499816359490.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:528471404332:ios:975db165ccd54ec6</string>
+	<key>DATABASE_URL</key>
+	<string>https://bored-1499816359490.firebaseio.com</string>
+</dict>
+</plist>

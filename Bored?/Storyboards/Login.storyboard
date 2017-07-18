@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="frj-6G-Rio">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="0jD-uD-ar7">
+            <objects>
+                <viewController id="frj-6G-Rio" customClass="LoginViewController" customModule="Bored_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oVV-Hy-SSW"/>
+                        <viewControllerLayoutGuide type="bottom" id="M5V-05-LcJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o97-md-wrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bored?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cur-xA-qLj">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.74095314741134644" green="0.94035845994949341" blue="0.84513348340988159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="lOX-v8-1AS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TestImage" translatesAutoresizingMaskIntoConstraints="NO" id="VNT-bV-tPu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi0-7S-MoS">
+                                <rect key="frame" x="0.0" y="303.5" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="abS-Ud-Piq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Light" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="frj-6G-Rio" eventType="touchUpInside" id="UZs-pU-vRH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xi0-7S-MoS" firstAttribute="centerX" secondItem="o97-md-wrZ" secondAttribute="centerX" id="3cV-xU-57z"/>
+                            <constraint firstItem="M5V-05-LcJ" firstAttribute="top" secondItem="cur-xA-qLj" secondAttribute="bottom" id="84f-q1-I3s"/>
+                            <constraint firstAttribute="trailing" secondItem="cur-xA-qLj" secondAttribute="trailing" id="LtN-xZ-UPr"/>
+                            <constraint firstItem="xi0-7S-MoS" firstAttribute="leading" secondItem="o97-md-wrZ" secondAttribute="leading" id="exi-kv-P2w"/>
+                            <constraint firstAttribute="trailing" secondItem="xi0-7S-MoS" secondAttribute="trailing" id="fZf-Ws-tbw"/>
+                            <constraint firstItem="cur-xA-qLj" firstAttribute="leading" secondItem="o97-md-wrZ" secondAttribute="leading" id="pAz-cS-f83"/>
+                            <constraint firstItem="xi0-7S-MoS" firstAttribute="centerY" secondItem="o97-md-wrZ" secondAttribute="centerY" id="pNS-dP-3Iu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ3-91-HOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="183.95802098950526"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TestImage" width="2259" height="1506"/>
+    </resources>
+</document>

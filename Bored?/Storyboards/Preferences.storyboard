@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8NB-eC-mYP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qlo-SU-Z9l">
+            <objects>
+                <viewController id="8NB-eC-mYP" customClass="ViewController" customModule="Bored_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ij2-Wa-LyN"/>
+                        <viewControllerLayoutGuide type="bottom" id="l2s-Kr-rC2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lgR-nM-zQR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-Ob-XAF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3ku-3e-TSy"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Select a Preference" id="o5y-WK-4Nv"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ppg-sF-jAS">
+                                <rect key="frame" x="105" y="276" width="165" height="115"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GDd-sb-EBn">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ct-K8-V5s">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Iyu-5i-1CF"/>
+                                                    <constraint firstAttribute="width" constant="50" id="a2p-Y2-5xu"/>
+                                                </constraints>
+                                                <state key="normal" image="btn_heart_black_outline-1"/>
+                                                <state key="selected" image="btn_heart_red_solid"/>
+                                                <connections>
+                                                    <action selector="individualButtonPressed:" destination="8NB-eC-mYP" eventType="touchUpInside" id="KfM-1e-Ojm"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Individual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZID-gn-egv">
+                                                <rect key="frame" x="65" y="0.0" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="K7F-eh-djc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bkh-3a-S9K">
+                                        <rect key="frame" x="0.0" y="65" width="165" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikP-Yt-ZO6">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="57D-JO-Zvx"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Q5E-OV-MXU"/>
+                                                </constraints>
+                                                <state key="normal" image="btn_heart_black_outline-1"/>
+                                                <state key="selected" image="btn_heart_red_solid"/>
+                                                <connections>
+                                                    <action selector="groupButtonPressed:" destination="8NB-eC-mYP" eventType="touchUpInside" id="0yh-Y3-Mo4"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzA-y4-IYT">
+                                                <rect key="frame" x="65" y="0.0" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="QGs-Ib-ppm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQW-04-9hp">
+                                <rect key="frame" x="257" y="562" width="102" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.74095314741134644" green="0.94035845994949341" blue="0.84513348340988159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButton:" destination="8NB-eC-mYP" eventType="touchUpInside" id="5Ed-E8-EO9"/>
+                                    <segue destination="m0c-X2-dxa" kind="show" identifier="toMain" id="d3m-BF-lE5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MfT-Ob-XAF" secondAttribute="trailing" id="64L-Sb-TSH"/>
+                            <constraint firstItem="Ppg-sF-jAS" firstAttribute="centerX" secondItem="lgR-nM-zQR" secondAttribute="centerX" id="M6m-5f-DCr"/>
+                            <constraint firstItem="Ppg-sF-jAS" firstAttribute="centerY" secondItem="lgR-nM-zQR" secondAttribute="centerY" id="m4V-i4-keU"/>
+                            <constraint firstItem="MfT-Ob-XAF" firstAttribute="top" secondItem="lgR-nM-zQR" secondAttribute="top" id="oJT-E1-4Sx"/>
+                            <constraint firstItem="MfT-Ob-XAF" firstAttribute="leading" secondItem="lgR-nM-zQR" secondAttribute="leading" id="qBe-Wf-QqY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="done" destination="wQW-04-9hp" id="fXi-Gi-qT0"/>
+                        <outlet property="groupButton" destination="ikP-Yt-ZO6" id="7iP-rL-OJD"/>
+                        <outlet property="individualButton" destination="7Ct-K8-V5s" id="eVU-9t-KGV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIu-9t-mk3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="61.619190404797607"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="45J-4X-kop">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="m0c-X2-dxa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhj-bL-yU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_heart_black_outline-1" width="24" height="24"/>
+        <image name="btn_heart_red_solid" width="24" height="24"/>
+    </resources>
+</document>

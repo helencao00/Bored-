@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bored_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,118 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvQ-hx-2ig">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qOh-lw-83k"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Select a Preference" id="0b0-jU-qOL"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1yS-hb-mJG">
+                                <rect key="frame" x="105" y="276" width="165" height="115"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3hM-oY-j1U">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6AY-po-pFh">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="UUV-St-fgR"/>
+                                                    <constraint firstAttribute="width" constant="50" id="pRl-Wf-Z3V"/>
+                                                </constraints>
+                                                <state key="normal" image="btn_heart_black_outline-1"/>
+                                                <state key="selected" image="btn_heart_red_solid"/>
+                                                <connections>
+                                                    <action selector="individualButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt4-H1-Ln6"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Individual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8c-7D-Wmo">
+                                                <rect key="frame" x="65" y="0.0" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="n5V-Fl-lUq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="15q-7a-bDR">
+                                        <rect key="frame" x="0.0" y="65" width="165" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNT-fQ-5Yt">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Z0C-xq-Wvm"/>
+                                                    <constraint firstAttribute="height" constant="50" id="gHA-us-IKY"/>
+                                                </constraints>
+                                                <state key="normal" image="btn_heart_black_outline-1"/>
+                                                <state key="selected" image="btn_heart_red_solid"/>
+                                                <connections>
+                                                    <action selector="groupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RS0-Fc-sBt"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLV-B1-63F">
+                                                <rect key="frame" x="65" y="0.0" width="100" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="CRB-ht-DQA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaM-Ko-RG6">
+                                <rect key="frame" x="257" y="562" width="102" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.74095314741134644" green="0.94035845994949341" blue="0.84513348340988159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16b-5p-1Hs"/>
+                                    <segue destination="tUV-i0-9NJ" kind="show" identifier="toMain" id="bFn-Yk-vj0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1yS-hb-mJG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="URu-bn-2uJ"/>
+                            <constraint firstAttribute="trailing" secondItem="tvQ-hx-2ig" secondAttribute="trailing" id="juy-gM-Xep"/>
+                            <constraint firstItem="1yS-hb-mJG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q4w-8a-8X6"/>
+                            <constraint firstItem="tvQ-hx-2ig" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="skf-BT-9s6"/>
+                            <constraint firstItem="tvQ-hx-2ig" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x6M-wR-4he"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="done" destination="HaM-Ko-RG6" id="WBR-eO-f4D"/>
+                        <outlet property="groupButton" destination="sNT-fQ-5Yt" id="deN-S7-hF4"/>
+                        <outlet property="individualButton" destination="6AY-po-pFh" id="zLe-3a-vyy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="61.619190404797607"/>
+        </scene>
+        <!--MainIndoorActivityScreen-->
+        <scene sceneID="UJ3-NO-DLZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainIndoorActivityScreen" id="tUV-i0-9NJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xn2-Fn-N0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="64.31784107946028"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_heart_black_outline-1" width="24" height="24"/>
+        <image name="btn_heart_red_solid" width="24" height="24"/>
+    </resources>
 </document>

@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,71 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestImage" translatesAutoresizingMaskIntoConstraints="NO" id="DQ3-oy-7KD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eff-ON-Rba">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="YLH-o4-MZh"/>
+                                    <constraint firstAttribute="width" constant="375" id="ak2-1g-mfN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Light" family="American Typewriter" pointSize="20"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FW-ib-nBA">
+                                <rect key="frame" x="0.0" y="642" width="375" height="25"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="WC9-s1-qTq"/>
+                                    <constraint firstAttribute="width" constant="375" id="bfS-Wg-Bo7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Light" family="American Typewriter" pointSize="20"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bored?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeY-Wx-Ukh">
+                                <rect key="frame" x="0.0" y="265" width="375" height="137"/>
+                                <color key="backgroundColor" red="0.74095314739999996" green="0.9403584599" blue="0.84513348340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="U5D-Nf-YDY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5FW-ib-nBA" firstAttribute="leading" secondItem="LeY-Wx-Ukh" secondAttribute="leading" id="0h1-M6-Gg9"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="DQ3-oy-7KD" secondAttribute="bottom" id="6iG-8Y-vHB"/>
+                            <constraint firstItem="eff-ON-Rba" firstAttribute="top" secondItem="DQ3-oy-7KD" secondAttribute="top" id="ALQ-Yd-fW5"/>
+                            <constraint firstAttribute="trailing" secondItem="DQ3-oy-7KD" secondAttribute="trailing" id="IcF-Wo-zeR"/>
+                            <constraint firstItem="DQ3-oy-7KD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="JOr-e7-ghX"/>
+                            <constraint firstItem="DQ3-oy-7KD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="NPW-t0-KRl"/>
+                            <constraint firstItem="LeY-Wx-Ukh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="On7-6q-DHu"/>
+                            <constraint firstItem="5FW-ib-nBA" firstAttribute="trailing" secondItem="LeY-Wx-Ukh" secondAttribute="trailing" id="PuV-5O-1PJ"/>
+                            <constraint firstItem="5FW-ib-nBA" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Wgd-QA-MBu"/>
+                            <constraint firstItem="5FW-ib-nBA" firstAttribute="leading" secondItem="eff-ON-Rba" secondAttribute="leading" id="cpr-2t-uvZ"/>
+                            <constraint firstItem="5FW-ib-nBA" firstAttribute="trailing" secondItem="DQ3-oy-7KD" secondAttribute="trailing" id="l7r-0a-xzp"/>
+                            <constraint firstItem="5FW-ib-nBA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="n6W-pC-qxG"/>
+                            <constraint firstItem="eff-ON-Rba" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="pg5-wj-gUo"/>
+                            <constraint firstItem="5FW-ib-nBA" firstAttribute="leading" secondItem="DQ3-oy-7KD" secondAttribute="leading" id="ybN-vM-03a"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-4" y="173.16341829085459"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TestImage" width="2259" height="1506"/>
+    </resources>
 </document>
